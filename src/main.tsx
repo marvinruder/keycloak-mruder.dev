@@ -33,7 +33,6 @@ createRoot(document.getElementById("root")!).render(
 
 declare global {
     interface Window {
-        kcContext?:
-            | import("./login/KcContext").KcContext;
+        kcContext?: import("./login/KcContext").KcContext;
     }
 }

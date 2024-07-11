@@ -3,23 +3,27 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-    body.kcBodyClass, body.oauth {
+    body.kcBodyClass,
+    body.oauth {
         background-image: none;
-        background-color: #E0F0FF;
+        background-color: #e0f0ff;
     }
 
-    #kc-header-wrapper, #kc-locale-dropdown button {
+    #kc-header-wrapper,
+    #kc-locale-dropdown button {
         color: #000000;
     }
 }
 @media (prefers-color-scheme: dark) {
-    body.kcBodyClass, body.oauth {
+    body.kcBodyClass,
+    body.oauth {
         background-image: none;
         background-color: #292929;
     }
 
-    #kc-header-wrapper, #kc-locale-dropdown button {
-        color: #FFFFFF;
+    #kc-header-wrapper,
+    #kc-locale-dropdown button {
+        color: #ffffff;
     }
 }
 
@@ -56,20 +60,17 @@ h1#kc-page-title > img {
     margin-bottom: 8px;
 }
 
-#kc-info-message > .instruction > b::before {
-    content: ": ";
-    font-weight: normal;
-}
-
-form > .kcButtonClass:not(:last-child), .kcFormButtonsWrapperClass > .kcButtonClass:not(:last-child) {
+form > .kcButtonClass:not(:last-child),
+.kcFormButtonsWrapperClass > .kcButtonClass:not(:last-child) {
     margin-right: 8px;
 }
 
-.form-group > .pf-c-button.pf-m-block:not(:last-child), #kc-delete-text {
+.form-group > .pf-c-button.pf-m-block:not(:last-child),
+#kc-delete-text {
     margin-bottom: 8px;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .col-md-10 {
         width: 100%;
     }
@@ -82,13 +83,15 @@ form > .kcButtonClass:not(:last-child), .kcFormButtonsWrapperClass > .kcButtonCl
 
 @media (max-width: 767px) {
     #kc-info-wrapper {
-        background-color: #F0F0F0;
+        background-color: #f0f0f0;
         border-top: unset;
     }
 
     .login-pf-page .card-pf {
-        border-top: 4px solid #0066CC;
+        border-top: 4px solid #0066cc;
         padding-top: 12px;
-        box-shadow: 0 0.5rem 1rem 0 rgba(3,3,3,0.16),0 0 0.375rem 0 rgba(3,3,3,0.08);
+        box-shadow:
+            0 0.5rem 1rem 0 rgba(3, 3, 3, 0.16),
+            0 0 0.375rem 0 rgba(3, 3, 3, 0.08);
     }
 }

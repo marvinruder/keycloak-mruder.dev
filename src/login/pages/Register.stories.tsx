@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { createKcPageStory } from "../KcPageStory";
+import { Attribute } from "keycloakify/login";
 
 const { KcPageStory } = createKcPageStory({ pageId: "register.ftl" });
 
@@ -47,23 +48,84 @@ export const WithEmailAlreadyExists: Story = {
     )
 };
 
-export const WithEmailAsUsername: Story = {
+export const WithRestrictedToMITStudents: Story = {
     render: () => (
         <KcPageStory
             kcContext={{
-                realm: {
-                    registrationEmailAsUsername: true
+                profile: {
+                    attributesByName: {
+                        email: {
+                            validators: {
+                                pattern: {
+                                    pattern: "^[^@]+@([^.]+\\.)*((mit\\.edu)|(berkeley\\.edu))$",
+                                    "error-message": "${profile.attributes.email.pattern.error}"
+                                }
+                            },
+                            annotations: {
+                                inputHelperTextBefore: "${profile.attributes.email.inputHelperTextBefore}"
+                            }
+                        }
+                    }
+                },
+                "x-keycloakify": {
+                    messages: {
+                        "${profile.attributes.email.inputHelperTextBefore}": "Please use your MIT or Berkeley email.",
+                        "${profile.attributes.email.pattern.error}":
+                            "This is not an MIT (<strong>@mit.edu</strong>) nor a Berkeley (<strong>@berkeley.edu</strong>) email."
+                    }
                 }
             }}
         />
     )
 };
 
-export const WithoutPassword: Story = {
+export const WithFavoritePet: Story = {
     render: () => (
         <KcPageStory
             kcContext={{
-                passwordRequired: false
+                profile: {
+                    attributesByName: {
+                        favoritePet: {
+                            name: "favorite-pet",
+                            displayName: "${profile.attributes.favoritePet}",
+                            validators: {
+                                options: {
+                                    options: ["cat", "dog", "fish"]
+                                }
+                            },
+                            annotations: {
+                                inputOptionLabelsI18nPrefix: "profile.attributes.favoritePet.options"
+                            },
+                            required: false,
+                            readOnly: false
+                        } satisfies Attribute
+                    }
+                },
+                "x-keycloakify": {
+                    messages: {
+                        "${profile.attributes.favoritePet}": "Favorite Pet",
+                        "${profile.attributes.favoritePet.options.cat}": "Fluffy Cat",
+                        "${profile.attributes.favoritePet.options.dog}": "Loyal Dog",
+                        "${profile.attributes.favoritePet.options.fish}": "Peaceful Fish"
+                    }
+                }
+            }}
+        />
+    )
+};
+
+export const WithEmailAsUsername: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                realm: {
+                    registrationEmailAsUsername: true
+                },
+                profile: {
+                    attributesByName: {
+                        username: undefined
+                    }
+                }
             }}
         />
     )
@@ -96,37 +158,27 @@ export const WithRecaptchaFrench: Story = {
     )
 };
 
-export const WithPresets: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                profile: {
-                    attributesByName: {
-                        firstName: {
-                            value: "Max"
-                        },
-                        lastName: {
-                            value: "Mustermann"
-                        },
-                        email: {
-                            value: "max.mustermann@gmail.com"
-                        },
-                        username: {
-                            value: "max.mustermann"
-                        }
-                    }
-                }
-            }}
-        />
-    )
-};
-
 export const WithPasswordMinLength8: Story = {
     render: () => (
         <KcPageStory
             kcContext={{
                 passwordPolicies: {
                     length: 8
+                }
+            }}
+        />
+    )
+};
+
+export const WithTermsAcceptance: Story = {
+    render: () => (
+        <KcPageStory
+            kcContext={{
+                termsAcceptanceRequired: true,
+                "x-keycloakify": {
+                    messages: {
+                        termsText: "<a href='https://example.com/terms'>Service Terms of Use</a>"
+                    }
                 }
             }}
         />
