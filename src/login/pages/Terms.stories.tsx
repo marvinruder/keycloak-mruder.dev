@@ -17,7 +17,9 @@ export const Default: Story = {
         <KcPageStory
             kcContext={{
                 "x-keycloakify": {
-                    realmMessageBundleTermsText: "<p>My terms in <strong>English</strong></p>"
+                    messages: {
+                        termsText: "<p>My terms in <strong>English</strong></p>"
+                    }
                 }
             }}
         />
@@ -33,7 +35,9 @@ export const French: Story = {
                 },
                 "x-keycloakify": {
                     // cSpell: disable
-                    realmMessageBundleTermsText: "<p>Mes terme en <strong>Français</strong></p>"
+                    messages: {
+                        termsText: "<p>Mes terme en <strong>Français</strong></p>"
+                    }
                     // cSpell: enable
                 }
             }}
