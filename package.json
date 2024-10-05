@@ -1,6 +1,6 @@
 {
     "name": "keycloakify-mruder-dev",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "description": "Keycloakify theme for sso.mruder.dev",
     "repository": {
         "type": "git",
