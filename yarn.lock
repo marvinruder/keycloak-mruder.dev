@@ -2390,10 +2390,10 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-keycloakify@11.3.3:
-  version "11.3.3"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.3.tgz#e5063408a756efbf97c69d79aa5e77352923b14e"
-  integrity sha512-bs9gqyc1nASP5HrN/x/miG+WxdRQT4d8p6BdBANFV0XlFcGElWUXzXt93obehOt/KHewkWUEF/2wlG8mbEDygA==
+keycloakify@11.3.4:
+  version "11.3.4"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.4.tgz#45d677ae7b39e41c25c724891ac5a5086603ac37"
+  integrity sha512-vA0MIQlf7JnxinXNJTPmUKj5AqJ3YNmBY62q1toTLKMHwcSeRbTfwBZhMW594g5BXyRGEym36P/sX129NXWdDA==
   dependencies:
     tsafe "^1.7.5"
 
