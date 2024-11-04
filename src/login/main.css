@@ -2,6 +2,38 @@ body {
     font-family: RedHatText;
 }
 
+#root > div,
+#storybook-root > div {
+    min-height: calc(100dvh - 72px - 24px);
+    margin-bottom: 24px;
+}
+
+#root::after,
+#storybook-root::after {
+    display: block;
+    position: static;
+    bottom: 8px;
+    height: 72px;
+    z-index: -1;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+    #root::after,
+    #storybook-root::after {
+        content: url("./assets/images/cat-light.svg");
+    }
+}
+@media (prefers-color-scheme: dark) {
+    #root::after,
+    #storybook-root::after {
+        content: url("./assets/images/cat-dark.svg");
+    }
+}
+
 @media (prefers-color-scheme: light) {
     body.kcBodyClass,
     body.oauth {
@@ -60,6 +92,12 @@ h1#kc-page-title > img {
     margin-bottom: 8px;
 }
 
+.kcFormGroupClass .kcFormGroupHeader {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 form > .kcButtonClass:not(:last-child),
 .kcFormButtonsWrapperClass > .kcButtonClass:not(:last-child) {
     margin-right: 8px;
@@ -87,6 +125,10 @@ form > .kcButtonClass:not(:last-child),
 }
 
 @media (max-width: 767px) {
+    #kc-info {
+        margin: 20px -20px -30px;
+    }
+
     #kc-info-wrapper {
         background-color: #f0f0f0;
         border-top: unset;
