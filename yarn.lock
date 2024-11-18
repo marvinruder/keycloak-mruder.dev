@@ -1957,12 +1957,12 @@ json5@^2.2.2, json5@^2.2.3:
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
-keycloakify@11.3.25:
-  version "11.3.25"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.25.tgz#9d2fc051aedf091f27614981f4264a5104b384fc"
-  integrity sha512-FDRdy5eZRUMUXy2RWSpBE8wkF5TUH2Jqw6w28HZhZsXbLqQpjh+smYYJda7ku8aBHoGvrL8Shl2dlevFM/AR4w==
+keycloakify@11.3.26:
+  version "11.3.26"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.26.tgz#522602c9fe83ff42c7d6d4f852757c02efd12f6f"
+  integrity sha512-hdwCYfwOrOpw7r8ohRoFdc9F/IbNZGQ6tXvIgfq8LagoWcHOXe25Hv2/iKJQwdpVj0fbeR1dN5LI0yazntOL0Q==
   dependencies:
-    tsafe "^1.7.5"
+    tsafe "^1.8.5"
 
 keyv@^4.5.3:
   version "4.5.4"
@@ -2464,10 +2464,10 @@ ts-dedent@^2.0.0, ts-dedent@^2.2.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
-tsafe@^1.7.5:
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/tsafe/-/tsafe-1.7.5.tgz#0d3a31202b5ef87c7ba997e66e03fd80801278ef"
-  integrity sha512-tbNyyBSbwfbilFfiuXkSOj82a6++ovgANwcoqBAcO9/REPoZMEQoE8kWPeO0dy5A2D/2Lajr8Ohue5T0ifIvLQ==
+tsafe@^1.8.5:
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/tsafe/-/tsafe-1.8.5.tgz#cdf9fa3111974ac480d7ee519f8241815e5d22ea"
+  integrity sha512-LFWTWQrW6rwSY+IBNFl2ridGfUzVsPwrZ26T4KUJww/py8rzaQ/SY+MIz6YROozpUCaRcuISqagmlwub9YT9kw==
 
 tsconfig-paths@^4.2.0:
   version "4.2.0"
