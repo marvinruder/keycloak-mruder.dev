@@ -17,7 +17,7 @@
     "license": "MIT",
     "keywords": [],
     "dependencies": {
-        "keycloakify": "11.3.26",
+        "keycloakify": "11.3.27",
         "react": "18.3.1",
         "react-dom": "18.3.1"
     },
