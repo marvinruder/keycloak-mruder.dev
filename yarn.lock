@@ -1825,10 +1825,10 @@ json5@^2.2.2, json5@^2.2.3:
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
-keycloakify@11.3.32:
-  version "11.3.32"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.32.tgz#69569ed424e130cfb3be3450fec81108b6625c68"
-  integrity sha512-GKE7UOsHAJian0aUMApfvB+UK8qXI7JoOw/Si93JXY0OOoxRIxGOuTCmQ93NaEw2cxCS2oJYGp3rRYz5DyF9wg==
+keycloakify@11.4.0:
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.4.0.tgz#6e7bc7b7864951a1b3516cd993707f5b22abf26e"
+  integrity sha512-WxDM0HFJz0errAcmI+gmgtJJbpytcGtnCxlpxsNb56pElJ98uKj0yNezuddKC9MHFTfSP5gEJ6M3lM52CGjzog==
   dependencies:
     tsafe "^1.8.5"
 
