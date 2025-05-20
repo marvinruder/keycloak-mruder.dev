@@ -2666,10 +2666,10 @@ json5@^2.2.2, json5@^2.2.3:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
-keycloakify@11.8.27:
-  version "11.8.27"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.8.27.tgz#a54da3b0e2b9eeac4cf6333972b37e0da454fbb7"
-  integrity sha512-c7+8tFVrjQvqOXnuPDHT8YVBg2e5pyUTrRirlu20f5DikJrA/xAnwvgmzCtg8D+5IL+KOE5I2qcEPzRNOB5F4Q==
+keycloakify@11.8.28:
+  version "11.8.28"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.8.28.tgz#552dedbe66b81a37d512c174868a536577250000"
+  integrity sha512-qCi7BWaTUzu80dq3HH4tfkAUrKQTcnRDL/evv6eYrlDjbUgAWr0ScI4Y9ujy1Qa+AyW9PqP1OIK+eZ44aVEQ2w==
   dependencies:
     tsafe "^1.8.5"
 
