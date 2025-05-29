@@ -22,23 +22,15 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-    #root::after,
-    #storybook-root::after {
+    #root:has(div.kcLoginClass)::after,
+    #storybook-root:has(div.kcLoginClass)::after {
         content: url("./assets/images/cat-light.svg");
     }
-}
-@media (prefers-color-scheme: dark) {
-    #root::after,
-    #storybook-root::after {
-        content: url("./assets/images/cat-dark.svg");
-    }
-}
 
-@media (prefers-color-scheme: light) {
     body.kcBodyClass,
     body.oauth {
         background-image: none;
-        background-color: #e0f0ff;
+        background-color: #f2f2f2;
     }
 
     #kc-header-wrapper,
@@ -47,14 +39,18 @@ body {
     }
 }
 @media (prefers-color-scheme: dark) {
+    #root:has(div.kcLoginClass)::after,
+    #storybook-root:has(div.kcLoginClass)::after {
+        content: url("./assets/images/cat-dark.svg");
+    }
+
     body.kcBodyClass,
     body.oauth {
         background-image: none;
-        background-color: #292929;
+        background-color: #151515;
     }
 
-    #kc-header-wrapper,
-    #kc-locale-dropdown button {
+    #kc-header-wrapper {
         color: #ffffff;
     }
 }
@@ -113,6 +109,15 @@ form > .kcButtonClass:not(:last-child),
     outline: none;
 }
 
+.kcFormClass .kcFormGroupClass:first-of-type .kcFormButtonsClass#kc-form-buttons {
+    margin-top: 0;
+}
+
+#kc-info-wrapper {
+    background-color: #ffffff;
+    border-top: 1px solid #c7c7c7;
+}
+
 @media (min-width: 992px) {
     .col-md-10 {
         width: 100%;
@@ -127,11 +132,6 @@ form > .kcButtonClass:not(:last-child),
 @media (max-width: 767px) {
     #kc-info {
         margin: 20px -20px -30px;
-    }
-
-    #kc-info-wrapper {
-        background-color: #f0f0f0;
-        border-top: unset;
     }
 
     .login-pf-page .card-pf {
